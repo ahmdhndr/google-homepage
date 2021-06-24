@@ -13,7 +13,7 @@ body {
 .navbar {
   display: flex;
   height: 60px;
-  padding: 10px;
+  padding: 6px;
   align-items: center;
   position: relative;
 }
@@ -51,9 +51,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 92px;
+  height: calc(100%-560px);
+  margin-top: 45px;
 }
 .logo-wrapper .logo {
-  min-width: 92px;
   position: relative;
   width: 272px;
 }
@@ -72,9 +74,6 @@ body {
   max-height: 160px;
   padding: 20px;
 }
-.search-wrapper > div {
-  display: block;
-}
 .search-wrapper .search-form {
   display: grid;
   margin-top: 0em;
@@ -87,7 +86,7 @@ body {
   align-items: center;
   width: 100%;
   position: absolute;
-  top: 18px;
+  top: 15px;
   left: 16px;
 }
 .search-wrapper .search-form .icon-container .icon {
@@ -113,7 +112,7 @@ body {
   border: 1px solid #dfe1e5;
   border-radius: 24px;
   z-index: 3;
-  height: 44px;
+  height: 38px;
   padding: 6px 50px 0px;
   font-size: 16px;
 }
