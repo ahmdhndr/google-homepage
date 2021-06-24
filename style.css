@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  height: 60px;
+  padding: 10px;
+  align-items: center;
+  position: relative;
+}
+.navbar .navbar-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-nav .nav-item {
+  display: inline-block;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0px 15px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+.navbar .navbar-nav .nav-item .nav-link .nav-profile-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.navbar .navbar-nav .nav-item .nav-link .nav-profile-icon img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-wrapper .logo {
+  min-width: 92px;
+  position: relative;
+  width: 272px;
+}
+.logo-wrapper .logo .logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  width: auto;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 160px;
+  padding: 20px;
+}
+.search-wrapper > div {
+  display: block;
+}
+.search-wrapper .search-form {
+  display: grid;
+  margin-top: 0em;
+  width: 584px;
+  position: relative;
+}
+.search-wrapper .search-form .icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 18px;
+  left: 16px;
+}
+.search-wrapper .search-form .icon-container .icon {
+  width: 15px;
+  height: 15px;
+  z-index: 4;
+  position: relative;
+}
+.search-wrapper .search-form .icon-container .icon.icon-right {
+  top: -3px;
+  left: -35px;
+  cursor: pointer;
+}
+.search-wrapper .search-form .icon-container .icon img {
+  width: 100%;
+  display: block;
+}
+.search-wrapper .search-form input {
+  display: flex;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: none;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  z-index: 3;
+  height: 44px;
+  padding: 6px 50px 0px;
+  font-size: 16px;
+}
+.search-wrapper .search-form input:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+.search-wrapper .search-form input:hover {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+.search-wrapper .search-form .button {
+  padding-top: 18px;
+  justify-self: center;
+}
+.search-wrapper .search-form .button .btn {
+  background: #f8f9fa;
+  color: #3c4043;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin: 11px 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.search-wrapper .search-form .button .btn:hover {
+  border: 1px solid #dfe1e5;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.google-offered {
+  margin-bottom: 24px;
+  font-size: 12px;
+  text-align: center;
+}
+.google-offered a {
+  text-decoration: none;
+  margin: 0px 5px;
+}
+
+.footer {
+  margin-top: auto;
+  background: #f2f2f2;
+}
+.footer .footer-region {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+}
+.footer .footer-nav {
+  padding: 15px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .footer-nav a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  padding-right: 20px;
+}
+.footer .footer-nav a:last-child {
+  padding-right: 0px;
+}
+.footer .footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Utilities */
+.tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: #262626;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  top: -50px;
+  left: -70px;
+  z-index: 10;
+}
+.tooltip-text a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+.icon:hover .tooltip-text {
+  visibility: visible;
+}
